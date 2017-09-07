@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".SendActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_send"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        app:elevation="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/mainLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txt_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:height="100dp"
+                android:gravity="top"
+                android:hint="@string/message"
+                android:inputType="textMultiLine"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_btn_login"
+                android:text="@string/btn_send"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

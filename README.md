@@ -16,12 +16,12 @@ Any pusher on server side, because ```sample app``` implement ```private channel
 # Building and Running
 
 - Open with your editor ```app/build.gradle```
-- change ```PUSHER_API_KEY``` with your PUSHER APIKEY
-- change ```PUSHER_CHANNEL_NAME``` with any channel name you like
-- change ```PUSHER_EVENT_NAME``` with any event name you like
-- change ```PUSHER_END_POINT``` with your server side ENDPOINT. Example : ```http://yourdomain.com/``` must end with trailingslash
-- change ```PUSHER_AUTH_END_POINT``` with your server side AUTH ENDPOINT. Example : ```pusherauth```. App will combine ```PUSHER_END_POINT``` + ```PUSHER_AUTH_END_POINT```
-- change ```PUSHER_TRIGGER_END_POINT``` with your server side TRIGGER ENDPOINT. Example : ```pushertrigger```. . App will combine ```PUSHER_END_POINT``` + ```PUSHER_TRIGGER_END_POINT```
-- change ```PUSHER_SERVICE_NAME``` with any service name you like
+- change ```PUSHER_API_KEY``` value with your PUSHER APIKEY
+- change ```PUSHER_CHANNEL_NAME``` value with any channel name you like
+- change ```PUSHER_EVENT_NAME``` value with any event name you like
+- change ```PUSHER_END_POINT``` value with your server side ENDPOINT. Example : ```http://yourdomain.com/``` must end with trailingslash
+- change ```PUSHER_AUTH_END_POINT``` value with your server side AUTH ENDPOINT. Example : ```pusherauth```. App will combine ```PUSHER_END_POINT``` + ```PUSHER_AUTH_END_POINT```
+- change ```PUSHER_TRIGGER_END_POINT``` value with your server side TRIGGER ENDPOINT. Example : ```pushertrigger```. . App will combine ```PUSHER_END_POINT``` + ```PUSHER_TRIGGER_END_POINT```
+- change ```PUSHER_SERVICE_NAME``` value with any service name you like
 
 If you like a sample give me star! Happy Coding

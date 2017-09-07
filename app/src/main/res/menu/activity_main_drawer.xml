@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:title="@string/btn_login" />
+    </group>
+
+    <item android:title="@string/navigation_root_communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_send_msg"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/navigation_send_message" />
+            <item
+                android:id="@+id/nav_receive_msg"
+                android:title="Receive" />
+        </menu>
+    </item>
+
+</menu>

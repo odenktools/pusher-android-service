@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    signingConfigs {
+        release {
+            storeFile file("config/pusherkey.jks")
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.pribumitech.pusherapp"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField 'String', 'PUSHER_API_KEY', "\"XXXXXXXXXXXXXXXXXXXXXXXX\""
+        buildConfigField 'String', 'PUSHER_CHANNEL_NAME', "\"private-test-channel\""
+        buildConfigField 'String', 'PUSHER_EVENT_NAME', "\"client-test-event\""
+        buildConfigField 'String', 'PUSHER_END_POINT', "\"http://pusher.app/\""
+        buildConfigField 'String', 'PUSHER_AUTH_END_POINT', "\"pusherauth\""
+        buildConfigField 'String', 'PUSHER_TRIGGER_END_POINT', "\"pushertrigger\""
+        buildConfigField 'String', 'PUSHER_SERVICE_NAME', "\"pusher_notification\""
+
+
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            jniDebuggable false
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+	compile 'com.pusher:pusher-java-client:1.5.0'
+	
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+	
+    compile "com.google.code.gson:gson:2.7"
+}
