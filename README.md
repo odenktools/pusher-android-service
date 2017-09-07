@@ -4,14 +4,14 @@ This Sample app for using Pusher on Android platform.
 
 # Features
 
-- Learn how to running Pusher on background service.
+- Learn how to running Pusher on ```Background Service```.
 - Notification message badges. Not use any third party libraries! (GCM and FCM). Very Cool huuh??
 - ```Private Channel``` implementation, in this case you will learn how pusher authorization works
 - ```Trigger Channel``` with and without ```server side```
 
 # Requirement
 
-Any pusher on server side, because ```sample app``` implement ```private channel```. You dont have server side? See my work on [Odenktools Laravel Pusher](https://github.com/odenktools/laravel-pusher)
+Any Pusher running on ```server side```. Because this ```sample app``` implement how to use ```private channel```. You dont have ```server side```? See my work on [Odenktools Laravel Pusher](https://github.com/odenktools/laravel-pusher)
 
 # Building and Running
 
